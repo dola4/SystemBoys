@@ -1,0 +1,130 @@
+.historique-root {
+  padding: 36px 0 44px 0;
+  max-width: 960px;
+  margin: auto;
+  min-height: 480px;
+}
+
+.historique-box {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px #b0b6c136;
+  padding: 32px 30px 26px;
+}
+
+.historique-title {
+  text-align: center;
+  margin: 0 0 24px 0;
+  font-family: system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #222e57;
+  font-size: 30px;
+}
+
+.historique-table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #f7faff;
+  font-size: 17px;
+}
+
+.historique-table th,
+.historique-table td {
+  padding: 10px 12px;
+  border: 1px solid #dde3ef;
+  background: #e6ebf8;
+  font-weight: 700;
+}
+
+.historique-table td {
+  font-weight: 600;
+  color: #35417b;
+  background: #f6f8fd;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.historique-table .point-cell {
+  background: #e3f2fd;
+  font-weight: bold;
+  color: #0077a5;
+  border-radius: 9px;
+  box-shadow: 0 1px 3px #b4d9e41b;
+  cursor: pointer;
+}
+
+.historique-details-list {
+  margin: 18px 0 10px 0;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #223;
+}
+
+.historique-details-list li {
+  margin-bottom: 6px;
+}
+
+.historique-details-heure {
+  color: #7a859a;
+  font-size: 13px;
+}
+
+.historique-table td:not(.point-cell) {
+  color: #aaa;
+  font-weight: normal;
+  background: #fff;
+  cursor: default;
+}
+
+/* Overlay and Popup */
+.historique-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(33, 41, 65, 0.38);
+  z-index: 1100;
+}
+
+.historique-details-popup {
+  position: fixed;
+  top: 12vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #d8e0f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 42px #1a273b33;
+  padding: 36px;
+  min-width: 320px;
+  max-width: 390px;
+  z-index: 1200;
+  animation: fadein 0.28s;
+}
+
+.historique-close-btn {
+  margin-top: 10px;
+  border-radius: 8px;
+  background: linear-gradient(92deg, #eaf2ff 0%, #f7f7fb 100%);
+  padding: 7px 25px;
+  border: 1px solid #a9b9d1;
+  color: #213469;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 2px 10px #0011;
+  cursor: pointer;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
